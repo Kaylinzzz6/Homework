@@ -1,13 +1,11 @@
-# Lesson 3 CCC Squares Problem
+from math import floor
 
-# called import statements, makes it so the number from sqrt is always rounded down
-from math import sqrt, floor
+# input
+tiles = int(input("Tiles amount:"))
 
-tiles_amount = int(input("Number of Tiles:"))
+# square root tiles and get side length, it's ** 0.5
+side_length = tiles ** 0.5
+side_length = floor(side_length)
 
-# **0.5 is another way of square rooting
-# can also write as side_length = floor(sqrt(tiles_amount))
-side_length = sqrt(tiles_amount)
-side_length = floor(answer)
-
-print(f"The largest square has a side length of {side_length}.")
+# ouput
+print(f"The side length of of the square from your tiles is {side_length}")
